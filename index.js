@@ -161,12 +161,12 @@ function createRock(x) {
  */
 function endGame() {
 
+  ROCKS.forEach(remove())
+  //for (var i = 0; i < ROCKS.length; i++) {
+  //  ROCKS[0].remove()
+  //  ROCKS.shift()
 
-  for (var i = 0; i < ROCKS.length; i++) {
-    ROCKS[0].remove()
-    ROCKS.shift()
-
-  }
+  //}
 
   clearInterval(gameInterval)
   alert("YOU LOSE!")
