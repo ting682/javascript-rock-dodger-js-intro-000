@@ -164,7 +164,7 @@ function endGame() {
   ROCKS.forEach(ROCKS => {
     for (var i = 0; i < ROCKS.length; i++) {
       ROCKS[i].remove()
-      //ROCKS.shift()
+      ROCKS.shift()
 
     }
   })
